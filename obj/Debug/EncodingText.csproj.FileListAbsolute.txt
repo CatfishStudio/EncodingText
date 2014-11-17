@@ -5,3 +5,10 @@ C:\Program Code\C#\EncodingText\obj\Debug\EncodingText.MainForm.resources
 C:\Program Code\C#\EncodingText\obj\Debug\EncodingText.csproj.GenerateResource.Cache
 C:\Program Code\C#\EncodingText\obj\Debug\EncodingText.exe
 C:\Program Code\C#\EncodingText\obj\Debug\EncodingText.pdb
+C:\Program Code\Git\EncodingText\bin\Debug\EncodingText.exe
+C:\Program Code\Git\EncodingText\bin\Debug\EncodingText.pdb
+C:\Program Code\Git\EncodingText\obj\Debug\EncodingText.csprojResolveAssemblyReference.cache
+C:\Program Code\Git\EncodingText\obj\Debug\EncodingText.MainForm.resources
+C:\Program Code\Git\EncodingText\obj\Debug\EncodingText.csproj.GenerateResource.Cache
+C:\Program Code\Git\EncodingText\obj\Debug\EncodingText.exe
+C:\Program Code\Git\EncodingText\obj\Debug\EncodingText.pdb

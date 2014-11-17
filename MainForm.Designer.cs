@@ -42,7 +42,6 @@ namespace EncodingText
 			this.открытьФайлВходныхДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.сохранитьФайлВходныхДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.сохранитьРезультатКодировкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.сохранитьЧисловоеПредставлениеРезультатаКодировкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.правкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,6 +66,11 @@ namespace EncodingText
 			this.richTextBox2 = new System.Windows.Forms.RichTextBox();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
 			this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+			this.tabPage4 = new System.Windows.Forms.TabPage();
+			this.сохранитьДесятичноеПредставлениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+			this.richTextBox4 = new System.Windows.Forms.RichTextBox();
 			this.menuStrip1.SuspendLayout();
 			this.statusStrip1.SuspendLayout();
 			this.toolStrip1.SuspendLayout();
@@ -79,6 +83,7 @@ namespace EncodingText
 			this.tabControl2.SuspendLayout();
 			this.tabPage2.SuspendLayout();
 			this.tabPage3.SuspendLayout();
+			this.tabPage4.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
@@ -90,7 +95,7 @@ namespace EncodingText
 									this.справкаToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(554, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(734, 24);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -99,8 +104,10 @@ namespace EncodingText
 			this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.открытьФайлВходныхДанныхToolStripMenuItem,
 									this.сохранитьФайлВходныхДанныхToolStripMenuItem,
+									this.toolStripSeparator4,
 									this.сохранитьРезультатКодировкиToolStripMenuItem,
-									this.сохранитьЧисловоеПредставлениеРезультатаКодировкиToolStripMenuItem,
+									this.сохранитьДесятичноеПредставлениеToolStripMenuItem,
+									this.сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem,
 									this.toolStripSeparator3,
 									this.выходToolStripMenuItem});
 			this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
@@ -110,36 +117,30 @@ namespace EncodingText
 			// открытьФайлВходныхДанныхToolStripMenuItem
 			// 
 			this.открытьФайлВходныхДанныхToolStripMenuItem.Name = "открытьФайлВходныхДанныхToolStripMenuItem";
-			this.открытьФайлВходныхДанныхToolStripMenuItem.Size = new System.Drawing.Size(400, 22);
+			this.открытьФайлВходныхДанныхToolStripMenuItem.Size = new System.Drawing.Size(335, 22);
 			this.открытьФайлВходныхДанныхToolStripMenuItem.Text = "Открыть файл входных данных.";
 			// 
 			// сохранитьФайлВходныхДанныхToolStripMenuItem
 			// 
 			this.сохранитьФайлВходныхДанныхToolStripMenuItem.Name = "сохранитьФайлВходныхДанныхToolStripMenuItem";
-			this.сохранитьФайлВходныхДанныхToolStripMenuItem.Size = new System.Drawing.Size(400, 22);
+			this.сохранитьФайлВходныхДанныхToolStripMenuItem.Size = new System.Drawing.Size(335, 22);
 			this.сохранитьФайлВходныхДанныхToolStripMenuItem.Text = "Сохранить файл входных данных.";
 			// 
 			// сохранитьРезультатКодировкиToolStripMenuItem
 			// 
 			this.сохранитьРезультатКодировкиToolStripMenuItem.Name = "сохранитьРезультатКодировкиToolStripMenuItem";
-			this.сохранитьРезультатКодировкиToolStripMenuItem.Size = new System.Drawing.Size(400, 22);
+			this.сохранитьРезультатКодировкиToolStripMenuItem.Size = new System.Drawing.Size(335, 22);
 			this.сохранитьРезультатКодировкиToolStripMenuItem.Text = "Сохранить результат кодировки.";
-			// 
-			// сохранитьЧисловоеПредставлениеРезультатаКодировкиToolStripMenuItem
-			// 
-			this.сохранитьЧисловоеПредставлениеРезультатаКодировкиToolStripMenuItem.Name = "сохранитьЧисловоеПредставлениеРезультатаКодировкиToolStripMenuItem";
-			this.сохранитьЧисловоеПредставлениеРезультатаКодировкиToolStripMenuItem.Size = new System.Drawing.Size(400, 22);
-			this.сохранитьЧисловоеПредставлениеРезультатаКодировкиToolStripMenuItem.Text = "Сохранить числовое представление результата кодировки.";
 			// 
 			// toolStripSeparator3
 			// 
 			this.toolStripSeparator3.Name = "toolStripSeparator3";
-			this.toolStripSeparator3.Size = new System.Drawing.Size(397, 6);
+			this.toolStripSeparator3.Size = new System.Drawing.Size(332, 6);
 			// 
 			// выходToolStripMenuItem
 			// 
 			this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-			this.выходToolStripMenuItem.Size = new System.Drawing.Size(400, 22);
+			this.выходToolStripMenuItem.Size = new System.Drawing.Size(335, 22);
 			this.выходToolStripMenuItem.Text = "Выход";
 			this.выходToolStripMenuItem.Click += new System.EventHandler(this.ВыходToolStripMenuItemClick);
 			// 
@@ -165,9 +166,9 @@ namespace EncodingText
 			// 
 			this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.toolStripStatusLabel1});
-			this.statusStrip1.Location = new System.Drawing.Point(0, 276);
+			this.statusStrip1.Location = new System.Drawing.Point(0, 389);
 			this.statusStrip1.Name = "statusStrip1";
-			this.statusStrip1.Size = new System.Drawing.Size(554, 22);
+			this.statusStrip1.Size = new System.Drawing.Size(734, 22);
 			this.statusStrip1.TabIndex = 1;
 			this.statusStrip1.Text = "statusStrip1";
 			// 
@@ -189,7 +190,7 @@ namespace EncodingText
 									this.toolStripButton1});
 			this.toolStrip1.Location = new System.Drawing.Point(0, 24);
 			this.toolStrip1.Name = "toolStrip1";
-			this.toolStrip1.Size = new System.Drawing.Size(554, 25);
+			this.toolStrip1.Size = new System.Drawing.Size(734, 25);
 			this.toolStrip1.TabIndex = 2;
 			this.toolStrip1.Text = "toolStrip1";
 			// 
@@ -208,8 +209,8 @@ namespace EncodingText
 									"KOI-8",
 									"Числовое представление"});
 			this.toolStripComboBox1.Name = "toolStripComboBox1";
-			this.toolStripComboBox1.Size = new System.Drawing.Size(121, 25);
-			this.toolStripComboBox1.Text = "ASCII";
+			this.toolStripComboBox1.Size = new System.Drawing.Size(150, 25);
+			this.toolStripComboBox1.Text = "Windows-1251";
 			// 
 			// toolStripSeparator1
 			// 
@@ -228,10 +229,9 @@ namespace EncodingText
 									"ASCII",
 									"MS-DOS",
 									"Windows-1251",
-									"KOI-8",
-									"Числовое представление"});
+									"KOI-8"});
 			this.toolStripComboBox2.Name = "toolStripComboBox2";
-			this.toolStripComboBox2.Size = new System.Drawing.Size(121, 25);
+			this.toolStripComboBox2.Size = new System.Drawing.Size(150, 25);
 			this.toolStripComboBox2.Text = "ASCII";
 			// 
 			// toolStripSeparator2
@@ -241,11 +241,10 @@ namespace EncodingText
 			// 
 			// toolStripButton1
 			// 
-			this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
 			this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
 			this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.toolStripButton1.Name = "toolStripButton1";
-			this.toolStripButton1.Size = new System.Drawing.Size(76, 22);
+			this.toolStripButton1.Size = new System.Drawing.Size(92, 22);
 			this.toolStripButton1.Text = "Выполнить.";
 			this.toolStripButton1.Click += new System.EventHandler(this.ToolStripButton1Click);
 			// 
@@ -262,8 +261,8 @@ namespace EncodingText
 			// splitContainer1.Panel2
 			// 
 			this.splitContainer1.Panel2.Controls.Add(this.tabControl2);
-			this.splitContainer1.Size = new System.Drawing.Size(554, 227);
-			this.splitContainer1.SplitterDistance = 277;
+			this.splitContainer1.Size = new System.Drawing.Size(734, 340);
+			this.splitContainer1.SplitterDistance = 366;
 			this.splitContainer1.TabIndex = 3;
 			// 
 			// tabControl1
@@ -273,7 +272,7 @@ namespace EncodingText
 			this.tabControl1.Location = new System.Drawing.Point(0, 0);
 			this.tabControl1.Name = "tabControl1";
 			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(277, 227);
+			this.tabControl1.Size = new System.Drawing.Size(366, 340);
 			this.tabControl1.TabIndex = 0;
 			// 
 			// tabPage1
@@ -282,7 +281,7 @@ namespace EncodingText
 			this.tabPage1.Location = new System.Drawing.Point(4, 22);
 			this.tabPage1.Name = "tabPage1";
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage1.Size = new System.Drawing.Size(269, 201);
+			this.tabPage1.Size = new System.Drawing.Size(358, 314);
 			this.tabPage1.TabIndex = 0;
 			this.tabPage1.Text = "Входные данные";
 			this.tabPage1.UseVisualStyleBackColor = true;
@@ -293,7 +292,7 @@ namespace EncodingText
 			this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.richTextBox1.Location = new System.Drawing.Point(3, 3);
 			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.Size = new System.Drawing.Size(263, 195);
+			this.richTextBox1.Size = new System.Drawing.Size(352, 308);
 			this.richTextBox1.TabIndex = 0;
 			this.richTextBox1.Text = "";
 			this.richTextBox1.WordWrap = false;
@@ -302,11 +301,12 @@ namespace EncodingText
 			// 
 			this.tabControl2.Controls.Add(this.tabPage2);
 			this.tabControl2.Controls.Add(this.tabPage3);
+			this.tabControl2.Controls.Add(this.tabPage4);
 			this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tabControl2.Location = new System.Drawing.Point(0, 0);
 			this.tabControl2.Name = "tabControl2";
 			this.tabControl2.SelectedIndex = 0;
-			this.tabControl2.Size = new System.Drawing.Size(273, 227);
+			this.tabControl2.Size = new System.Drawing.Size(364, 340);
 			this.tabControl2.TabIndex = 0;
 			// 
 			// tabPage2
@@ -315,7 +315,7 @@ namespace EncodingText
 			this.tabPage2.Location = new System.Drawing.Point(4, 22);
 			this.tabPage2.Name = "tabPage2";
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(265, 201);
+			this.tabPage2.Size = new System.Drawing.Size(356, 314);
 			this.tabPage2.TabIndex = 0;
 			this.tabPage2.Text = "Результат";
 			this.tabPage2.UseVisualStyleBackColor = true;
@@ -326,7 +326,7 @@ namespace EncodingText
 			this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.richTextBox2.Location = new System.Drawing.Point(3, 3);
 			this.richTextBox2.Name = "richTextBox2";
-			this.richTextBox2.Size = new System.Drawing.Size(259, 195);
+			this.richTextBox2.Size = new System.Drawing.Size(350, 308);
 			this.richTextBox2.TabIndex = 0;
 			this.richTextBox2.Text = "";
 			this.richTextBox2.WordWrap = false;
@@ -337,25 +337,65 @@ namespace EncodingText
 			this.tabPage3.Location = new System.Drawing.Point(4, 22);
 			this.tabPage3.Name = "tabPage3";
 			this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage3.Size = new System.Drawing.Size(265, 201);
+			this.tabPage3.Size = new System.Drawing.Size(356, 314);
 			this.tabPage3.TabIndex = 1;
-			this.tabPage3.Text = "Числовое представление";
+			this.tabPage3.Text = "Dec";
 			this.tabPage3.UseVisualStyleBackColor = true;
 			// 
 			// richTextBox3
 			// 
+			this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.richTextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.richTextBox3.Location = new System.Drawing.Point(3, 3);
 			this.richTextBox3.Name = "richTextBox3";
-			this.richTextBox3.Size = new System.Drawing.Size(259, 195);
+			this.richTextBox3.Size = new System.Drawing.Size(350, 308);
 			this.richTextBox3.TabIndex = 0;
 			this.richTextBox3.Text = "";
+			// 
+			// tabPage4
+			// 
+			this.tabPage4.Controls.Add(this.richTextBox4);
+			this.tabPage4.Location = new System.Drawing.Point(4, 22);
+			this.tabPage4.Name = "tabPage4";
+			this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage4.Size = new System.Drawing.Size(356, 314);
+			this.tabPage4.TabIndex = 2;
+			this.tabPage4.Text = "Hex";
+			this.tabPage4.UseVisualStyleBackColor = true;
+			// 
+			// сохранитьДесятичноеПредставлениеToolStripMenuItem
+			// 
+			this.сохранитьДесятичноеПредставлениеToolStripMenuItem.Name = "сохранитьДесятичноеПредставлениеToolStripMenuItem";
+			this.сохранитьДесятичноеПредставлениеToolStripMenuItem.Size = new System.Drawing.Size(335, 22);
+			this.сохранитьДесятичноеПредставлениеToolStripMenuItem.Text = "Сохранить десятичное представление.";
+			// 
+			// сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem
+			// 
+			this.сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem.Name = "сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem";
+			this.сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem.Size = new System.Drawing.Size(335, 22);
+			this.сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem.Text = "Сохранить шестнадцатеричное представление.";
+			// 
+			// toolStripSeparator4
+			// 
+			this.toolStripSeparator4.Name = "toolStripSeparator4";
+			this.toolStripSeparator4.Size = new System.Drawing.Size(332, 6);
+			// 
+			// richTextBox4
+			// 
+			this.richTextBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+			this.richTextBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.richTextBox4.ForeColor = System.Drawing.Color.White;
+			this.richTextBox4.Location = new System.Drawing.Point(3, 3);
+			this.richTextBox4.Name = "richTextBox4";
+			this.richTextBox4.Size = new System.Drawing.Size(350, 308);
+			this.richTextBox4.TabIndex = 0;
+			this.richTextBox4.Text = "";
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(554, 298);
+			this.ClientSize = new System.Drawing.Size(734, 411);
 			this.Controls.Add(this.splitContainer1);
 			this.Controls.Add(this.toolStrip1);
 			this.Controls.Add(this.statusStrip1);
@@ -379,15 +419,20 @@ namespace EncodingText
 			this.tabControl2.ResumeLayout(false);
 			this.tabPage2.ResumeLayout(false);
 			this.tabPage3.ResumeLayout(false);
+			this.tabPage4.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.RichTextBox richTextBox4;
+		private System.Windows.Forms.ToolStripMenuItem сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem сохранитьДесятичноеПредставлениеToolStripMenuItem;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+		private System.Windows.Forms.TabPage tabPage4;
 		private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem сервисToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem правкаToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-		private System.Windows.Forms.ToolStripMenuItem сохранитьЧисловоеПредставлениеРезультатаКодировкиToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem сохранитьРезультатКодировкиToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem сохранитьФайлВходныхДанныхToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem открытьФайлВходныхДанныхToolStripMenuItem;
