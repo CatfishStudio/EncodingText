@@ -12,3 +12,10 @@ C:\Program Code\Git\EncodingText\obj\Debug\EncodingText.MainForm.resources
 C:\Program Code\Git\EncodingText\obj\Debug\EncodingText.csproj.GenerateResource.Cache
 C:\Program Code\Git\EncodingText\obj\Debug\EncodingText.exe
 C:\Program Code\Git\EncodingText\obj\Debug\EncodingText.pdb
+C:\GIT\EncodingText\bin\Debug\EncodingText.exe
+C:\GIT\EncodingText\bin\Debug\EncodingText.pdb
+C:\GIT\EncodingText\obj\Debug\EncodingText.csprojResolveAssemblyReference.cache
+C:\GIT\EncodingText\obj\Debug\EncodingText.MainForm.resources
+C:\GIT\EncodingText\obj\Debug\EncodingText.csproj.GenerateResource.Cache
+C:\GIT\EncodingText\obj\Debug\EncodingText.exe
+C:\GIT\EncodingText\obj\Debug\EncodingText.pdb
