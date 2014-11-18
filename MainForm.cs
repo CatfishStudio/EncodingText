@@ -639,27 +639,46 @@ namespace EncodingText
 		
 		void ОткрытьФайлВходныхДанныхToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			if(openFileDialog1.ShowDialog() == DialogResult.OK) richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+			if(openFileDialog1.ShowDialog() == DialogResult.OK) richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.RichText);
 		}
 		
 		void СохранитьФайлВходныхДанныхToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			if(saveFileDialog1.ShowDialog() == DialogResult.OK) richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+			if(saveFileDialog1.ShowDialog() == DialogResult.OK) richTextBox1.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
 		}
 		
 		void СохранитьРезультатКодировкиToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			if(saveFileDialog1.ShowDialog() == DialogResult.OK) richTextBox2.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+			if(saveFileDialog1.ShowDialog() == DialogResult.OK) richTextBox2.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);
 		}
 		
 		void СохранитьДесятичноеПредставлениеToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			if(saveFileDialog1.ShowDialog() == DialogResult.OK) richTextBox3.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);			
+			if(saveFileDialog1.ShowDialog() == DialogResult.OK) richTextBox3.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);			
 		}
 		
 		void СохранитьШестнадцатеричноеПредставлениеToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			if(saveFileDialog1.ShowDialog() == DialogResult.OK) richTextBox4.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);			
+			if(saveFileDialog1.ShowDialog() == DialogResult.OK) richTextBox4.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.RichText);			
+		}
+		
+		void TabControl2SelectedIndexChanged(object sender, EventArgs e)
+		{
+			if(tabControl2.SelectedTab.Text == "Результат"){
+				сохранитьРезультатКодировкиToolStripMenuItem.Enabled = true;
+				сохранитьДесятичноеПредставлениеToolStripMenuItem.Enabled = false;
+				сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem.Enabled = false;
+			}
+			if(tabControl2.SelectedTab.Text == "Dec"){
+				сохранитьРезультатКодировкиToolStripMenuItem.Enabled = false;
+				сохранитьДесятичноеПредставлениеToolStripMenuItem.Enabled = true;
+				сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem.Enabled = false;
+			}
+			if(tabControl2.SelectedTab.Text == "Hex"){
+				сохранитьРезультатКодировкиToolStripMenuItem.Enabled = false;
+				сохранитьДесятичноеПредставлениеToolStripMenuItem.Enabled = false;
+				сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem.Enabled = true;
+			}
 		}
 	}
 }

@@ -172,6 +172,7 @@ namespace EncodingText
 			// 
 			// сохранитьДесятичноеПредставлениеToolStripMenuItem
 			// 
+			this.сохранитьДесятичноеПредставлениеToolStripMenuItem.Enabled = false;
 			this.сохранитьДесятичноеПредставлениеToolStripMenuItem.Name = "сохранитьДесятичноеПредставлениеToolStripMenuItem";
 			this.сохранитьДесятичноеПредставлениеToolStripMenuItem.Size = new System.Drawing.Size(335, 22);
 			this.сохранитьДесятичноеПредставлениеToolStripMenuItem.Text = "Сохранить десятичное представление.";
@@ -179,6 +180,7 @@ namespace EncodingText
 			// 
 			// сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem
 			// 
+			this.сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem.Enabled = false;
 			this.сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem.Name = "сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem";
 			this.сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem.Size = new System.Drawing.Size(335, 22);
 			this.сохранитьШестнадцатеричноеПредставлениеToolStripMenuItem.Text = "Сохранить шестнадцатеричное представление.";
@@ -583,6 +585,7 @@ namespace EncodingText
 			this.tabControl2.SelectedIndex = 0;
 			this.tabControl2.Size = new System.Drawing.Size(364, 340);
 			this.tabControl2.TabIndex = 0;
+			this.tabControl2.SelectedIndexChanged += new System.EventHandler(this.TabControl2SelectedIndexChanged);
 			// 
 			// tabPage2
 			// 
@@ -673,6 +676,7 @@ namespace EncodingText
 			this.Controls.Add(this.toolStrip1);
 			this.Controls.Add(this.statusStrip1);
 			this.Controls.Add(this.menuStrip1);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MainForm";
 			this.Text = "EncodingText версия 1.0";
